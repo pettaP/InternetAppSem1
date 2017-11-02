@@ -1,0 +1,176 @@
+/* Downloaded from http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+.title { 
+	color: #d9d9d9; 
+	background-color: #00cc66;
+	font-family: "Shrikhand";
+	text-shadow: 2px 2px black;
+	border-bottom: 2px solid black;
+	margin: 0% 20%;
+	font-size: 55px;
+	text-align: center;
+	padding: 2%;
+	position: fixed;
+	top: 0px;
+	width: 56%;
+}
+
+#pot img {
+	max-width: 100px;
+	height: auto;
+	float: left;
+	padding-left: 4%;
+}
+
+.headers li { 	
+	color: white; 
+	font-family: "Shrikhand";
+	text-shadow: 1px 1px #00cc66;
+	font-size: 20px;
+	display: inline-block; 
+	margin: 0% 5%; 
+}
+
+.headers li:hover{
+	background-color: #00cc66;
+}
+
+.headers { 
+	text-align: center;
+	background: lightgrey;
+	margin: 0% 20% 0%;
+	position: fixed;
+	top: 105px;
+	width: 59%;
+	padding: 0.5%;
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+}
+
+h2 {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.body {
+	text-align: center;
+	font-family: "Roboto";
+	background-color: rgba(255,255,255,0.5);
+	margin: 0% 20%;
+	padding-top: 170px;
+	padding-bottom: 100%;
+	width: 60%;
+}
+
+body {
+	background-image: url(images/bord.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.meatingred {
+	float: left; 
+	text-align: left;
+	padding: 15px;
+	background-color: white;
+	margin: 15px;
+	border-radius: 20px;
+}
+
+.instruc {
+	text-align: left;
+	float: right;
+	padding: 15px;
+	background-color: white;
+	margin: 15px;
+	border-radius: 20px;
+}
+
+#meat img {
+	max-width: 400px;
+	margin-top: 65px;
+	margin-right: 70px;
+	float: right;
+	height: auto;
+}
+
+.paningred {
+	float: right; 
+	text-align: left;
+	padding: 15px;
+	padding-bottom: 15%;
+	background-color: white;
+	margin: 15px;
+	border-radius: 20px;
+}
+
+#pancake img {
+	float: left;
+	max-width: 320px;
+	height: auto;;
+	margin-left: 15%;
+	margin-top: 7.5%;
+}
