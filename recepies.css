@@ -54,26 +54,35 @@ blockquote, q {
 	quotes: "" "";
 }
 
-.title { 
+.h1 { 
 	color: #d9d9d9; 
 	background-color: #00cc66;
 	font-family: "Shrikhand";
 	text-shadow: 2px 2px black;
 	border-bottom: 2px solid black;
-	margin: 0% 20%;
-	font-size: 55px;
-	text-align: center;
-	padding: 2%;
-	position: fixed;
+	font-size: 2.8em;
+	padding: 0;
+	width: 100%;
 	top: 0px;
-	width: 56%;
+	overflow: hidden;
+	margin: 0;
 }
 
-#pot img {
+#pot {
 	max-width: 100px;
 	height: auto;
 	float: left;
-	padding-left: 4%;
+	padding: 2%;
+}
+
+#pot img {
+	width: 100%;
+}
+
+#title {
+	float: right;
+	text-align: center;
+	padding: 2%;
 }
 
 .headers li { 	
@@ -82,23 +91,33 @@ blockquote, q {
 	text-shadow: 1px 1px #00cc66;
 	font-size: 20px;
 	display: inline-block; 
-	margin: 0% 5%; 
+	padding-right: 5%; 
+	padding-left: 5%;
 }
 
 .headers li:hover{
 	background-color: #00cc66;
 }
 
+.wrapper { 
+	position: fixed;
+	top: 0;
+	width: 60%;
+    padding: 0;
+}
+
 .headers { 
 	text-align: center;
 	background: lightgrey;
-	margin: 0% 20% 0%;
-	position: fixed;
-	top: 105px;
-	width: 59%;
-	padding: 0.5%;
+	width: 100%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
 	border-bottom: 2px solid white;
 	border-top: 2px solid white;
+}
+
+.introtext h2{
+	padding-top: 200px;
 }
 
 a {
@@ -119,9 +138,7 @@ h2 {
 	font-family: "Roboto";
 	background-color: rgba(255,255,255,0.5);
 	margin: 0% 20%;
-	padding-top: 170px;
 	padding-bottom: 100%;
-	width: 60%;
 }
 
 body {
@@ -134,10 +151,11 @@ body {
 .meatingred {
 	float: left; 
 	text-align: left;
-	padding: 15px;
+	padding-left: 15px;
+	margin-left: 15px;
 	background-color: white;
-	margin: 15px;
 	border-radius: 20px;
+	width: 36%
 }
 
 .instruc {
@@ -150,11 +168,12 @@ body {
 }
 
 #meat img {
-	max-width: 400px;
-	margin-top: 65px;
-	margin-right: 70px;
+	max-width: 53%;
+	margin-right: 3%;
+	margin-top: 6%;
 	float: right;
 	height: auto;
+	overflow: hidden;
 }
 
 .paningred {
@@ -167,10 +186,182 @@ body {
 	border-radius: 20px;
 }
 
+#pancakemenu {
+	background-color: #00cc66;
+}
+
+#meatmenu {
+	background-color: #00cc66;
+}
+
+#plannermenu {
+	background-color: #00cc66;
+}
+
 #pancake img {
 	float: left;
 	max-width: 320px;
 	height: auto;;
-	margin-left: 15%;
+	margin-left: 4%;
 	margin-top: 7.5%;
+}
+
+.reciwrapper {
+	padding-top: 200px;
+	height: 100%;
+	background-color: white;
+	margin-left: 10%;
+	margin-right: 10%;
+	overflow: hidden;
+}
+
+.calender {
+	width: auto;
+	overflow: hidden;
+}
+
+#currentmonth {
+	font-weight: bold;
+	font-size: 30px;
+	background-size: 100% 100%;
+	margin-left: 12%;
+	margin-right: 12%;
+	padding-top: 9%;
+	padding-bottom: 9%; 
+}
+
+#week {
+	padding-left: 6%;
+	padding-right: 1%;
+	overflow: hidden;
+}
+
+#week p {
+	width: calc( 100% / 7.6);
+	height: 35px;
+	font-size: 20px;
+	padding-top: 2%;
+	background-color: grey;
+	float: left; 
+	border: 0.5px solid black;
+}
+
+#days {
+	padding-top: 0%;
+	padding-left: 6%;
+	padding-right: 1%;
+	overflow: hidden;
+}
+
+#days p {
+	height: 85px;
+	width: calc( 100% / 7.6);
+	float: left;
+	border: 0.5px solid black;
+	font-size: 15px;
+	line-height: 12px;
+	background-color: #d9d9d9;
+}
+
+#days p:hover {
+	background-color: #80ffbf;
+}
+
+#days p img {
+	padding-top: 10%;
+	width: 99%;
+	height: auto;
+}
+
+.commentsection {
+	padding: 15px;
+	margin: 15px;
+	float: left;
+	text-align: left; 
+}
+
+.user {
+	font-size: 80%;
+	padding-bottom: 1%;
+}
+
+.comment {
+	font-style: italic;
+}
+
+.commentsection li {
+	box-shadow: 2px 2px 2px grey;
+	padding: 1%;
+	background: #eee;
+}
+
+@media (max-width: 1000px) {
+
+	.meatingred {
+		width: 100%;
+		float: none;
+	}
+
+	#meat img {
+		float: none;
+		width: 100%;
+	}
+
+	#pancake img {
+		width: 100%;
+		float: none;
+		margin-left: 0%;
+	}
+
+	.paningred {
+		float: none;
+		width: 100%;
+	}
+
+	.h1 {
+		font-size: 1.5em;
+	}
+
+}
+
+@media (max-width: 600px){
+
+	.meatingred {
+		width: 100%;
+		float: none;
+	}
+
+	#meat img {
+		float: none;
+		width: 100%;
+	}
+
+	#pancake img {
+		width: 100%;
+		float: none;
+		margin-left: 0%;
+	}
+
+	.paningred {
+		float: none;
+		width: 100%;
+	}
+
+	.h1 {
+		font-size: 1.5em;
+	}
+
+	.reciwrapper {
+		margin: 0;
+	}
+
+	.wrapper {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.body{
+		margin: 0;
+	}
 }
